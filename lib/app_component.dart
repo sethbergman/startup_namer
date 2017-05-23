@@ -17,6 +17,7 @@ class AppComponent implements OnInit {
   var names = <WordPair>[];
   final savedNames = new Set<WordPair>();
 
+
   void generateNames() {
     names = generateWordPairs().take(5).toList();
   }
@@ -24,11 +25,7 @@ class AppComponent implements OnInit {
   @override
   void ngOnInit() {
     generateNames();
-    initializeApp(
-        apiKey: "AIzaSyAnKTvOE_xPfvsOp9w8aIC3ib6e1o9P24o",
-        authDomain: "fir-dart-c03e3.firebaseapp.com",
-        databaseURL: "https://fir-dart-c03e3.firebaseio.com",
-        storageBucket: "fir-dart-c03e3.appspot.com");
+    initializeApp();
   }
 
   void addToSaved(WordPair name) {
@@ -46,4 +43,7 @@ class AppComponent implements OnInit {
     }
     addToSaved(name);
   }
+
+  void initializeApp(
+      {String apiKey, String authDomain, String databaseURL, String storageBucket}) {}
 }
