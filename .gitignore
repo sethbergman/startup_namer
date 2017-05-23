@@ -8,6 +8,6 @@ pubspec.lock
 # Directory created by dartdoc
 doc/api/
 .idea
-/analysis_options.yaml
+
 /CHANGELOG.md
-/.pub/
+
