@@ -4,7 +4,7 @@
 import 'package:angular2/platform/browser.dart';
 
 import 'package:startup_namer/app_component.dart';
-import 'package:peanut/peanut.dart';
+
 
 void main() {
   bootstrap(AppComponent);

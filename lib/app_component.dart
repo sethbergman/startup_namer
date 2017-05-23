@@ -1,7 +1,7 @@
 import 'package:angular2/angular2.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:english_words/english_words.dart';
-import 'package:peanut/peanut.dart';
+
 
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
@@ -24,6 +24,11 @@ class AppComponent implements OnInit {
   @override
   void ngOnInit() {
     generateNames();
+    initializeApp(
+        apiKey: "AIzaSyAnKTvOE_xPfvsOp9w8aIC3ib6e1o9P24o",
+        authDomain: "fir-dart-c03e3.firebaseapp.com",
+        databaseURL: "https://fir-dart-c03e3.firebaseio.com",
+        storageBucket: "fir-dart-c03e3.appspot.com");
   }
 
   void addToSaved(WordPair name) {
