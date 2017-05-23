@@ -26,7 +26,7 @@ class AppComponent implements OnInit {
     generateNames();
     initializeApp(
         apiKey: "AIzaSyAnKTvOE_xPfvsOp9w8aIC3ib6e1o9P24o",
-        authDomain: "fir-dart-c03e3.firebaseapp.com",
+        authDomain: "fir-dart-c03e3.firebaseapp.com/index.html",
         databaseURL: "https://fir-dart-c03e3.firebaseio.com",
         storageBucket: "fir-dart-c03e3.appspot.com");
   }
@@ -47,3 +47,5 @@ class AppComponent implements OnInit {
     addToSaved(name);
   }
 }
+
+  void initializeApp({String apiKey, String authDomain, String databaseURL, String storageBucket}) {}
